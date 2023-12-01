@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+body{
+  background-color: black;
+}
+.banner{
+  background-image: linear-gradient(
+      -45deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../public/venom.jpeg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 600px) {
+  .banner{
+    background-image: linear-gradient(
+        -45deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../public/venom.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.social-icon{
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin: 5px;
+  font-size: 50px;
 }
